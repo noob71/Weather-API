@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushaal's Weather</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Arvo', serif;
+}
+
+#container{
+    display: flex;
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;   
+}
+
+#box{
+    height: 70%;
+    width: 20%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+</style>
+<body>
+    <div id="container">
+        <div id="box">
+           City : {%location%} <br><br>
+           Temperature : {%temp%} &deg;C<br><br>
+           Humidity : {%humidity%} <br><br>
+        </div>
+    </div>
+</body>
+</html>
